@@ -3,11 +3,16 @@
     src: url(sansation_light.woff);
   }
 
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     margin: 50px;
    
 } 
+
+
 
 
 .header{
