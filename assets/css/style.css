@@ -24,7 +24,7 @@ body{
     position: fixed;
     top: 0;
     width: 100%;
-   
+    height: 100px;
     -webkit-box-shadow: 0 3px 15px -6px black;
        -moz-box-shadow: 0 3px 15px -6px black;
             box-shadow: 0 3px 15px -6px black;
@@ -37,7 +37,7 @@ body{
 }
 
 .logo{
-    width: 70%;
+    width: 50%;
     padding-top: 10px;
     padding-left: 30px;
 }
@@ -47,6 +47,7 @@ body{
     flex-direction: row;
     justify-content: space-between;
     padding: 20px;
+    padding-top: 5px;
 }
 
 a.direction:link {
@@ -162,7 +163,7 @@ a.direction:visited {
 
 
 .what_container{
-    scroll-margin-top: 110px;
+    scroll-margin-top: 100px;
     height: 70vh;
     background-color: #16A67E;
     margin: -50px;
@@ -221,7 +222,7 @@ a.direction:visited {
 
 
 .company_container{
-    scroll-margin-top: 110px;
+    scroll-margin-top: 100px;
     height: 85vh;
     margin: -50px;
     margin-top: auto;
@@ -286,3 +287,146 @@ img.about_img{
     
     padding-top: 70px;
 }
+
+
+
+
+.contact_container{
+    scroll-margin-top: 100px;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.left_contact_heading{
+
+    color:#055050;
+    font-size: 55px;
+    font-family: "Expo";
+    margin-top: -6px;
+
+}
+
+.left_contact_container{
+    background-color: #BBFBE9;
+    padding-bottom: 15px;
+    border-radius: 8px;
+}
+
+.right_contact{
+
+    margin-top: 10px;
+    margin-left: 60px;
+}
+
+
+.frame{
+    width: 605px;
+    height: 315px;
+    border-radius: 20px;
+}
+
+.contact_detail_container{
+    display: flex;
+
+}
+
+.detail_img{
+    margin-right: 30px;
+}
+
+.detail_para{
+    font-family: "Exo";
+    font-weight: 700;
+    font-size: 15px;
+    color: #16A67E;
+}
+
+
+label{
+    font-size: 12px;
+    font-family: 'Exo';
+    font-weight: 600;
+    color: #055050;
+    margin-left: 30px;
+    padding-top: 40px;
+}
+
+
+.input1{
+    border: none;
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 550px;
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+
+.query{
+    height: 120px;
+}
+
+
+.left_contact_container_heading{
+    font-family: 'Exo';
+    padding-left: 30px;
+    color:#055050;
+    padding-top: 20px;
+}
+
+.submit{
+
+    border: none;
+    background-color: #055050;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    
+}
+
+.footer{
+    background-color: #055050;
+    display: flex;
+    justify-content: space-between;
+    margin: -50px;
+    
+}
+
+.footer_note{
+
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Exo';
+    padding-left: 20px;
+
+}
+
+
+.footer_logo{
+
+    padding-right: 20px;
+    margin-left: ;
+
+}
+
+.media_heading{
+
+    font-family: 'Exo';
+    color: #16A67E;
+    font-weight: 600;
+
+}
+
+
+.media_link{
+    margin-left: 20px;
+}
+
