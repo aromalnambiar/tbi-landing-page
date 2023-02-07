@@ -328,7 +328,7 @@ img.about_img{
     color:#055050;
     font-size: 55px;
     font-family: "Expo";
-    margin-top: 10px;
+    margin-top: 0px;
     margin-left: auto;
     margin-right: auto;
 
@@ -339,7 +339,7 @@ img.about_img{
     border-radius: 8px;
     padding-bottom: 10px;
     padding: 10px;
-    
+    margin-top: -50px;
 }
 
 .right_contact{
@@ -971,3 +971,6 @@ label{
     }
 
 }
+
+
+

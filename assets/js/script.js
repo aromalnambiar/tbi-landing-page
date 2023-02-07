@@ -6,7 +6,9 @@ drawer.onclick = function () {
 
 
 // route = document.querySelector(".route")
-// route   .onclick = function () {
+// route.onclick = function () {
 //     navBar = document.querySelector(".right_head")
 //     navBar.classList.toggle("active")
 // }
+
+
