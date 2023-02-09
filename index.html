@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Exo' rel='stylesheet'>
+    <link rel="shortcut icon" href="./assets/images/icon.svg" type="image/x-icon">
     <title>TBI</title>
 </head>
 <body>
@@ -109,8 +110,12 @@
                         <label for="fname">E-mail ID:</label><br>
                         <input class="input1" type="text" id="fname" name="fname" ><br>
                         <label for="fname">Your Query:</label><br>
-                        <input class="query input1" type="text" id="fname" name="fname" ><br><br>
-                        <input type="submit" value="Submit" class="submit">
+                        <textarea class="query input1" type="text" id="fname" name="fname" ></textarea><br><br>
+                        <div class="captcha">
+                            <div class="g-recaptcha" data-sitekey="6Ld1Sl8kAAAAADnrps0Yr8OFDjHa_8hIXwndD49o"></div>
+                            <input type="submit" value="Submit" class="submit">
+                        </div>
+                        
                       </form> 
                 </div>
             </div>
@@ -149,5 +154,5 @@
 
 </body>
 <script src="./assets/js/script.js"></script>
-
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </html>

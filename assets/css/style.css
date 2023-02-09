@@ -48,7 +48,7 @@ body{
     flex-direction: row;
     justify-content: space-between;
     padding: 20px;
-    padding-top: 5px;
+    padding-top: 15px;
 }
 
 a.direction:link {
@@ -404,6 +404,7 @@ label{
 
 .query{
     height: 80px;
+    margin-bottom: -10px;
 }
 
 
@@ -477,7 +478,17 @@ label{
 }
 
 
+.captcha{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
+.g-recaptcha{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
 
 
 
@@ -924,6 +935,7 @@ label{
         margin-left: 20px;
     }
     
+   
 }
 
 
