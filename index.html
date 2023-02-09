@@ -102,15 +102,15 @@
                 <h2 class="left_contact_heading">Contact us..!</h2>
                 <div class="left_contact_container">
                     <h1 class="left_contact_container_heading">Have a Query..!</h1>
-                    <form action="p" id="form">
+                    <form id=form action="https://sheetdb.io/api/v1/58f61be4dda40">
                         <label for="fname">Name:</label><br>    
-                        <input class="input1" type="text" id="fname" name="fname" ><br>
+                        <input class="input1" type="text" id="Name" name="entry.1383327103" ><br>
                         <label for="lname">Moblie Number:</label><br>
-                        <input class="input1" type="number" id="lname" name="lname" ><br>
+                        <input class="input1" type="number" id="Phone" name="entry.1173163780" ><br>
                         <label for="fname">E-mail ID:</label><br>
-                        <input class="input1" type="text" id="fname" name="fname" ><br>
+                        <input class="input1" type="text" id="Email" name="entry.806377958" ><br>
                         <label for="fname">Your Query:</label><br>
-                        <textarea class="query input1" type="text" id="fname" name="fname" ></textarea><br><br>
+                        <textarea class="query input1" type="text" id="Message" name="entry.639859489" ></textarea><br><br>
                         <div class="captcha">
                             <div class="g-recaptcha" data-sitekey="6Ld1Sl8kAAAAADnrps0Yr8OFDjHa_8hIXwndD49o"></div>
                             <input type="submit" value="Submit" class="submit">
@@ -155,4 +155,35 @@
 </body>
 <script src="./assets/js/script.js"></script>
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+    function postToGoogle() {
+      var field1 = $("#Name").val();
+      var field2 = $("#Email").val();
+      var field3 = $("#Phone").val();
+      var field4 = $("#Message").val();
+
+      $.ajax({
+        url: "https://docs.google.com/forms/u/1/d/e/1FAIpQLSd-H4UzDi96bNIGDJ5J-XyWvu6NbwdMHUfRZesEdVGIyzkleA/formResponse",
+          
+        //add your google form generated numbers below which are also the 'names' of your inputs     
+        data: {
+          "entry.1383327103": field1,
+          "entry.1173163780": field2,
+          "entry.806377958": field3,
+          "entry.639859489": field4
+        },
+        type: "POST",
+        dataType: "xml",
+        success: function (d) {
+          $('#form').trigger('reset');
+        },
+        error: function (x, y, z) {
+          $('#form').trigger('reset');
+        }
+      });
+      return false;
+    }
+  </script>
 </html>
